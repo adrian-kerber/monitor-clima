@@ -1,0 +1,87 @@
+/* fundo da página */
+body {
+  background-color: #2e2e2e;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* container principal */
+.app {
+  max-width: 600px;
+  margin: 30px auto 50px auto; /* menos margem em cima */
+  padding: 20px;
+  text-align: center;
+  min-height: auto;
+  border-radius: 16px;
+  transition: background 0.5s, color 0.5s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+
+/* estilos para clima */
+.app.clear {
+  background: linear-gradient(to bottom, #87ceeb, #fff);
+  color: #000;
+}
+
+.app.clouds {
+  background: linear-gradient(to bottom, #999, #ccc);
+  color: #000;
+}
+
+.app.rain,
+.app.drizzle,
+.app.thunderstorm {
+  background: linear-gradient(to bottom, #3a3a8a, #555);
+  color: #fff;
+}
+
+.app.snow {
+  background: linear-gradient(to bottom, #ffffff, #a0e0ff);
+  color: #000;
+}
+
+.app.mist,
+.app.fog {
+  background: linear-gradient(to bottom, #777, #aaa);
+  color: #000;
+}
+
+.app.default {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+/* painel do clima */
+.weather-panel {
+  background-color: #2E2E2E;
+  color: #F5F5F5;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+
+/* barra de busca */
+.search input {
+  padding: 10px;
+  width: 70%;
+  border-radius: 6px;
+  border: none;
+  margin-right: 10px;
+}
+
+.search button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+/* centralização de ícones */
+.weather-panel img {
+  display: inline-block;
+  vertical-align: middle;
+}
